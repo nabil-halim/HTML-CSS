@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="../Css/tentangbuah.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tentangbuah.com - Kontak</title>
+  </head>
+  <body>
+    <div class="Page">
+      <h1>Tentangbuah.com</h1>
+      <img src="../Images/Logos.png" width="100px" alt="" />
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li>
+          Buah
+          <ul>
+            <li><a href="Apel.html">Apel</a></li>
+            <li><a href="Jeruk.html">Jeruk</a></li>
+            <li><a href="mangga.html">Mangga</a></li>
+            <li><a href="pisang.html">Pisang</a></li>
+          </ul>
+        </li>
+        <li><a href="">Kontak</a></li>
+      </ul>
+      <hr />
+      <h3>Isi form dibawah untuk mengontak</h3>
+      <br />
+      <form action="../index.html" method="get">
+        <fieldset>
+          <legend>Form pemesanan</legend>
+          <label for="name">Nama:</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Isi disini"
+            required
+          />
+          <br /><br />
+          <label for="no">No Tlp.:</label>
+          <input
+            type="tel"
+            name="no"
+            id="no"
+            pattern="[0-9]{11}"
+            placeholder="11 angka"
+            required
+          />
+          <br /><br />
+          <label for="alamat">Alamat</label>
+          <input type="text" name="alamat" id="alamat" required />
+          <br /><br />
+          Jenis Kelamin:
+          <br />
+          <input type="radio" id="male" name="gender" value="male" />
+          <label for="male">Male</label><br />
+          <input type="radio" id="female" name="gender" value="female" />
+          <label for="female">Female</label><br />
+          <input type="radio" id="other" name="gender" value="other" />
+          <label for="other">Other</label>
+          <br /><br />
+          <select name="buah" id="">
+            <option value="Apel">Apel</option>
+            <option value="Jeruk">Jeruk</option>
+            <option value="Mangga">Mangga</option>
+            <option value="Pisang">Pisang</option>
+          </select>
+          <br /><br />
+          <input type="submit" value="Submit" />
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>

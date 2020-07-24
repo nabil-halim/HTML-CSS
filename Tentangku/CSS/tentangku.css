@@ -1,0 +1,56 @@
+* {
+  margin: 0px;
+}
+
+header {
+  background-color: tomato;
+  height: 82px;
+  border-bottom: 5px solid rgb(180, 10, 10);
+}
+.header {
+  color: white;
+  font-size: 25px;
+}
+h1 {
+  font-family: lucida sans;
+}
+.theme {
+  font-family: lucida sans;
+  font-size: 45px;
+}
+.content {
+  font-family: gill sans;
+  font-size: 25px;
+}
+a:link {
+  color: rgb(121, 81, 81);
+}
+a:hover {
+  color: rgb(151, 20, 20);
+}
+a:visited {
+  color: rgb(59, 118, 228);
+}
+a:active {
+  color: black;
+}
+fieldset {
+  width: 90%;
+  margin: auto;
+}
+.kegiatan {
+  font-family: "Times New Roman";
+  width: 90%;
+  margin: auto;
+}
+.top {
+  background-color: rgb(121, 9, 74);
+  color: antiquewhite;
+  padding: 20px;
+  margin: auto;
+}
+
+img {
+  padding: 50px;
+  width: 450px;
+}
