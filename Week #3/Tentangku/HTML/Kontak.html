@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      h3 {
+        background-color: red;
+        font-family: "Times New Roman";
+        padding: 25px;
+      }
+    </style>
+    <link rel="stylesheet" type="text/css" href="../CSS/tentangku.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tentangku.com - Kontak</title>
+  </head>
+  <body bgcolor="antiquewhite">
+    <div class="wrapper">
+      <div class="content">
+        <header>
+          <h1>Tentangku.com</h1>
+          <nav>
+            <ul>
+              <li><a href="../Home.html">Home</a></li>
+              <li>
+                <a href="Kegiatanku.html">Kegiatanku</a>
+                <ul>
+                  <li><a href="Kegiatanku.html">Hobi</a></li>
+                  <li><a href="Kegiatanku.html">Sekolah</a></li>
+                  <li><a href="Kegiatanku.html">Cita-Citaku</a></li>
+                  <li><a href="Kegiatanku.html">Next 10 years</a></li>
+                </ul>
+              </li>
+              <li><a href="">Kontak</a></li>
+            </ul>
+          </nav>
+        </header>
+        <section>
+          <h1>Kontak</h1>
+          <h3>Leave your form here i contact you</h3>
+          <br />
+          <form action="../Home.html" method="get">
+            <fieldset>
+              <legend>Kontak</legend>
+              <label for="name">Nama:</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Isi disini"
+                required
+              />
+              <br /><br />
+              <label for="no">No Tlp.:</label>
+              <input
+                type="tel"
+                name="no"
+                id="no"
+                pattern="[0-9]{11}"
+                placeholder="11 angka"
+                required
+              />
+              <br /><br />
+              <label for="alamat">Alamat</label>
+              <input type="text" name="alamat" id="alamat" required />
+              <br /><br />
+              Jenis Kelamin:
+              <br />
+              <input type="radio" id="male" name="gender" value="male" />
+              <label for="male">Male</label><br />
+              <input type="radio" id="female" name="gender" value="female" />
+              <label for="female">Female</label><br />
+              <input type="radio" id="other" name="gender" value="other" />
+              <label for="other">Other</label>
+              <br /><br />
+              <input type="submit" value="Submit" />
+            </fieldset>
+          </form>
+          <br /><br />
+        </section>
+        <footer>
+          <p>
+            <i class="fa fa-copyright" aria-hidden="true"
+              >Created by: nabilhalim57@gmail.com</i
+            >
+          </p>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

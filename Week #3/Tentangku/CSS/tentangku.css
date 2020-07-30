@@ -1,0 +1,139 @@
+* {
+  margin: 0px;
+}
+
+.content {
+  margin-top: 2%;
+}
+
+.wrapper {
+  width: 80%;
+  margin: auto;
+}
+
+.back {
+  background-color: tomato;
+  padding: 16px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+#homeh1 {
+  text-align: center;
+  margin-top: 6%;
+}
+
+header h1 {
+  margin-left: 6%;
+}
+
+nav {
+  clear: both;
+}
+
+nav ul {
+  margin-top: 4%;
+}
+
+section {
+  margin-top: 2%;
+}
+
+section p {
+  margin-top: 2%;
+  background-color: rgb(250, 150, 27);
+  border-bottom: 1.5px solid rgb(231, 183, 124);
+  border-right: 1.5px solid rgb(192, 157, 114);
+}
+
+section h1 {
+  text-align: center;
+  font-size: 60px;
+  border-bottom: 3px black double;
+  margin-bottom: 5%;
+}
+
+section h2 {
+  margin-top: 5%;
+}
+
+section img {
+  padding: 25px;
+  width: 450px;
+}
+
+footer {
+  margin: 3%;
+  text-align: center;
+}
+
+footer a:link {
+  color: #fff;
+}
+footer a:hover {
+  color: #fff;
+}
+footer a:visited {
+  color: #fff;
+}
+footer a:active {
+  color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  font-family: Verdana, Tahoma, sans-serif;
+  background: darkorange;
+  list-style: none;
+  margin: 0;
+  padding-left: 0px;
+}
+
+ul li {
+  color: #fff;
+  background: darkorange;
+  display: inline-block;
+  border: 1px blue;
+  padding: 10px;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+}
+
+ul li a {
+  color: #fff;
+}
+
+ul li:hover {
+  background: tomato;
+  cursor: pointer;
+}
+
+ul li ul {
+  background: darkorange;
+  visibility: hidden;
+  position: absolute;
+  margin-top: 0.69rem;
+  left: 0;
+  display: none;
+}
+
+ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  display: block;
+}
+
+ul li ul li {
+  clear: both;
+  width: 100%;
+}
+
+@media only screen and (max-width: 500px) {
+  body {
+    background-color: darksalmon;
+  }
+}
