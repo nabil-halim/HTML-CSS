@@ -1,0 +1,507 @@
+/* all */
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+p {
+  font-size: 20px;
+}
+
+/* header */
+.nav {
+  height: 90px;
+  background: #000;
+}
+
+.nav-left img {
+  width: 90px;
+  position: absolute;
+  left: 3%;
+}
+
+.logo {
+  color: #fff;
+  position: absolute;
+  font-size: 40px;
+  margin: 10px;
+  padding-left: 12%;
+  font-family: "Merienda", cursive;
+}
+
+.nav-right ul {
+  float: right;
+  margin-right: 25px;
+}
+
+.nav-right ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 15px;
+}
+
+.nav-right ul li a {
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  list-style: none;
+  font-size: 18px;
+  padding: 5px 0;
+  text-transform: uppercase;
+  font-family: poppins;
+}
+
+@media (max-width: 1250px) {
+  .logo {
+    font-size: 30px;
+    margin: 15px;
+  }
+}
+
+@media (max-width: 1118px) {
+  .nav-left img {
+    left: 1%;
+  }
+}
+
+@media (max-width: 945px) {
+  .nav-right ul li a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 360px) {
+  .logo {
+    font-size: 10;
+    margin-right: 50px;
+  }
+}
+
+@media (max-width: 1168px) {
+  .nav-right ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: black;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 100px;
+  }
+  .nav-right ul li {
+    display: block;
+    margin: 20px 0;
+    line-height: 30px;
+  }
+  .nav-right ul li a {
+    font-size: 20px;
+  }
+  .nav-left {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+  .nav-left img {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin-right: 300px;
+  }
+}
+
+@media (max-width: 400px) {
+  .nav-left img {
+    width: 60px;
+    margin-right: 250px;
+  }
+}
+
+/* Main */
+.main {
+  margin-top: 100px;
+}
+
+.main-left img {
+  display: block;
+  margin: auto;
+  width: 300px;
+  animation: drop 1.5s ease;
+}
+
+.main-right {
+  margin-top: 50px;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.main-right h2 {
+  font-family: "Merienda", cursive;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.main-right p {
+  font-size: 25px;
+}
+
+@media (min-width: 981px) {
+  .main {
+    width: 960px;
+    margin: auto;
+    display: flex;
+    margin-top: 200px;
+  }
+  .main-left img {
+    width: 500px;
+  }
+  .main-right {
+    margin: auto;
+    text-align: left;
+    margin-left: 60px;
+  }
+  .main-right p {
+    font-size: 18px;
+  }
+}
+
+@keyframes drop {
+  0% {
+    opacity: 0;
+    transform: translateY(-80%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+/* display */
+.display {
+  margin-top: 150px;
+}
+
+.display-content h2 {
+  margin-bottom: 50px;
+  font-family: "Merienda", cursive;
+  font-size: 50px;
+  text-align: center;
+}
+
+.display-content h3 {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  font-family: poppins;
+  font-size: 40px;
+}
+
+.product {
+  display: block;
+  margin: auto;
+  margin-top: 10%;
+  text-align: center;
+  flex-direction: column;
+}
+
+.product img {
+  display: flex;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.product-cont1 img {
+  width: 150px;
+}
+
+.product-cont2 img {
+  width: 300px;
+}
+
+.product-cont3 img {
+  width: 350px;
+}
+
+.product p {
+  font-size: 25px;
+}
+
+@media (min-width: 1300px) {
+  .product {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+  }
+  .display {
+    text-align: center;
+  }
+  .product-cont1 img {
+    width: 200px;
+  }
+
+  .product-cont2 img {
+    width: 325px;
+    height: 248px;
+  }
+  .product-cont3 img {
+    width: 400px;
+    height: 248px;
+  }
+
+  .product p {
+    font-size: 18px;
+  }
+}
+
+/* info */
+
+.info {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: #f8f9fb;
+  padding: 40px;
+}
+
+.info-cont {
+  margin: 50px;
+  display: block;
+  text-align: center;
+}
+
+.info-isi h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.info-isi p {
+  font-size: 20px;
+}
+
+#info-icon {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.icon1 {
+  color: rgb(35, 202, 35);
+}
+
+.icon2,
+.icon4 {
+  color: orange;
+}
+
+.icon3 {
+  color: brown;
+}
+
+/* payment */
+
+.payment {
+  padding: 40px;
+  margin-bottom: 20px;
+  background: #f8f9fb;
+  border-top: #353a40 10px dashed;
+  border-bottom: #353a40 10px dashed;
+}
+
+.pay-cont h2 {
+  font-size: 75px;
+  font-family: "Merienda", cursive;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.bank {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.bank h3 {
+  font-size: 30px;
+  margin: 10px;
+}
+
+.bank h4 {
+  font-size: 20px;
+}
+
+.bank img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.bank1 img {
+  width: 120px;
+  padding: 40px;
+}
+
+.bank2 img {
+  width: 150px;
+  height: 120px;
+  padding: 40px;
+}
+
+.bank3 img {
+  width: 150px;
+  height: 120px;
+  padding: 40px;
+}
+
+.bank1,
+.bank2,
+.bank3 {
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 500px) {
+  .pay-cont h2 {
+    font-size: 45px;
+  }
+}
+
+/* medsos */
+
+.medsos-sitemap {
+  background: #353a40;
+  color: #fff;
+}
+
+.medsos-isi h2,
+.medsos-isi h3 {
+  text-align: center;
+  padding: 30px;
+}
+
+.medsos-isi h2 {
+  font-size: 100px;
+  font-family: "Merienda", cursive;
+}
+
+.medsos-isi h3 {
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+
+.medsos-icon {
+  font-size: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.micon {
+  display: block;
+  text-align: center;
+  margin: 50px;
+}
+
+#Micon-1 {
+  color: #00e676;
+  margin: 40px;
+  cursor: pointer;
+}
+
+#Micon-2 {
+  color: #ff0000;
+  margin: 40px;
+  cursor: pointer;
+}
+
+#Micon-3 {
+  color: #1878f3;
+  margin: 40px;
+  cursor: pointer;
+}
+
+#Micon-4 {
+  color: #1da1f3;
+  margin: 40px;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .medsos-isi h3 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .micon {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 500px) {
+  .medsos-icon {
+    font-size: 40px;
+  }
+}
+
+/* sitemap */
+
+.sitemap-cont {
+  display: flex;
+  padding: 100px 0 100px 0;
+  justify-content: center;
+}
+
+.sitemap-cont ul li {
+  display: inline;
+  margin: 200px;
+  font-size: 25px;
+  text-align: center;
+}
+
+.sitemap-cont ul li a {
+  text-decoration: none;
+  list-style: none;
+  color: #fff;
+}
+
+@media (max-width: 1650px) {
+  .sitemap-cont ul li {
+    margin: 100px;
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 650px) {
+  .sitemap-cont ul li {
+    margin: 50px;
+    font-size: 20px;
+  }
+  .sitemap-cont h1 {
+    font-size: 25;
+  }
+}
+
+@media (max-width: 400px) {
+  .sitemap-cont h1 {
+    font-size: 25px;
+  }
+}
+
+/* footer */
+
+.footer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: #212429;
+  padding: 100px;
+  color: #fff;
+  text-align: center;
+  font-size: 150px;
+}
